@@ -1,0 +1,33 @@
+<!--When the position is set to absolute, an element can move according to the first positioned ancestor.
+“Positioned?? What is a positioned element?”
+A positioned element is one whose position value is either relative, absolute or fixed. So unless the position is not set or static, an element is positioned.
+The characteristic of a positioned element is that it can act as a reference point for its child elements.-->
+
+<head><style>
+section {
+  background: gold;
+  height: 200px;
+  padding: 10px;
+  position: relative; 	/* This turns the <section> into a point of reference for the <p> */
+}
+
+p {
+  background-color:pink;
+  color: white;
+  padding: 10px;
+  position: absolute;	/* This makes the <p> freely movable */
+ 	top:500;	/* 10px from the bottom */
+  left: 0px; 			/* 20px from the left */
+}
+
+
+</style></head>
+
+<body>
+
+<section>
+  I'm in position relative.
+  <p>
+    I'm in position absolute!
+  </p>
+</section></body>

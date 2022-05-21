@@ -1,0 +1,27 @@
+<!--
+An attribute selector provides a way to select HTML elements either by the presence of an element attribute or by the value of an attribute.
+This can be a very powerful technique, but because of uneven support by some of the browsers, not all web authors have used them.
+1.[attribute]
+2.[attribute=value]
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            [target=_blank] {
+                background-color: yellow;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <p>The links with a target attribute gets a yellow background:</p>
+        <a href="https://www.pesuacademy.com/Academy/">Pes University</a><br>
+        <a href="#Disney" target="_blank">disney.com</a> <br>
+        <a href="#Wiki" target="_top">wikipedia.org</a> <br>
+    </body>
+</html>
+
+
+

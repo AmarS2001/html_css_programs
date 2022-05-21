@@ -1,0 +1,22 @@
+<!--
+Attribute selector:
+5. [~=]- A specific attribute whose value matches atleast atleast one of the words in the space delimited list of words.
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            [title~=flower]
+			{
+			border:5px solid blueviolet;
+            }
+        </style>
+    </head>
+	
+    <body>
+        <img src="tulips.jpg" title="flower" width="150" height="113">
+        <img src="penguins.jpg" title="animal in australia" width="150" height="113">
+        <img src="panda.jpg" title="animal" width="224" height="162">
+    </body>
+</html>
